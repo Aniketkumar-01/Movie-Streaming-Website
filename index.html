@@ -35,6 +35,29 @@
     />
 
     <link rel="stylesheet" href="landpage.css" />
+    <style>
+      .button-container {
+        margin-top: 20px;
+        text-align: center;
+      }
+      .button-new {
+        background-color: orange;
+        border: none;
+        color: black;
+        padding: 15px 30px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 10px 10px;
+        cursor: pointer;
+        border-radius: 5px;
+        transition: background-color 0.3s;
+      }
+      .button-new:hover {
+        background-color: darkorange;
+      }
+    </style>
   </head>
 
   <body id="stop-scrolling">
@@ -60,18 +83,22 @@
       </div>
     </div>
 
+    <div class="button-container">
+      <a href="#" class="button-new">About Us</a>
+      <a href="#" class="button-new">Contact Us</a>
+      <a href="#" class="button-new">Request Us</a>
+      <a href="#" class="button-new">Disclaimer</a>
+      <a href="#" class="button-new">DMCA</a>
+    </div>
+
     <div class="images-container">
       <marquee behavior="alternate" direction="left" scrollamount="8.4">
-        // marquee - it defines a scrolling area in the HTML document that moves
-        across the page any direction.
         <div class="group1">
           <div class="image">
             <img src="./Images/super-girl.jpg" alt="super girl" />
           </div>
           <div class="image">
-            <img src="./Images/tenet.jpg" alt="" /> // The alt attribute
-            specifies an alternate text for an area, if the image cannot be
-            displayed.
+            <img src="./Images/tenet.jpg" alt="" />
           </div>
           <div class="image">
             <img src="./Images/dangal.jpg" alt="" />
@@ -307,3 +334,4 @@
     </script>
   </body>
 </html>
+
